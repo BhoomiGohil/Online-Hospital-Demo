@@ -47,7 +47,7 @@ body{
 }
 
 .menuinner{
-    width:50%;
+    width:80%;
     margin:auto;
     height:100%;
 }
@@ -63,22 +63,28 @@ body{
 
 .content{
     width:100%;
-    height:76%;
+    height:77%;
     margin-top:2px;
     border-top:1px #00AB9F solid;
 }
 
 .sidebar{
-    width:26%;
+    width:25%;
     float:left;
     height:100%;
 }
 
+.sideicon{
+  float:left;
+  width:5%;
+  height:100%;
+}
+
 .sidehref{
     float:left;
-    width:95%;
+    width:90%;
     max-height:45px;
-    margin:2%;
+    margin-top:5%;
     font-size:18px;
     text-decoration:none;
     color:#00AB9F;
@@ -87,9 +93,9 @@ body{
 
 .hospitalimg{
     width:73%;
+    height:99%;
     float:right;
     padding:5px;
-    border-left:1px #00AB9F solid;
 }
 
 .image{
