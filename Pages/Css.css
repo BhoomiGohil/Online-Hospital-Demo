@@ -36,8 +36,7 @@ table{
 
 tr{
   float:left;
-  width:48%;
-  padding:10px;
+  width:50%;
 }
 
 td{
@@ -57,7 +56,7 @@ input{
 
 .buttontd{
   width:15%;
-  margin-top:125px;
+  margin-top:125px;  
 }
 
 .button{
