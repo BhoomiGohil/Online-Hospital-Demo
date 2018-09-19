@@ -18,6 +18,7 @@
   border:1px #D3282D solid;
   padding:10px;
   border-radius:5px;
+  justify-content:center;
 }
 
 .formheading{
@@ -32,6 +33,7 @@
 table{
   width:100%;
   padding-bottom:50px;
+  justify-content: center;
 }
 
 tr{
@@ -56,7 +58,7 @@ input{
 
 .buttontd{
   width:15%;
-  margin-top:125px;  
+  margin-top:125px;
 }
 
 .button{
