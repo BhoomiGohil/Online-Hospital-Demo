@@ -234,3 +234,54 @@ body{
       margin:5px 0px 5px 0px;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1024px)
+{
+  .header{
+      height:70px;
+  }
+
+  .headerimg{
+    width: 45px;
+    height: 45px;
+    margin: 12px 0px 0px 14px;
+  }
+
+  .headername{
+    font-size: 20px;
+    margin: 24px 0px 0px 20px;
+  }
+
+  .menu{
+    height: 45px;
+    margin: 4px;
+    padding: 8px 0px 8px 0px;
+    font-size: 25px;
+  }
+
+  .menuinner{
+    width:85%;
+  }
+
+  .content{
+      height:60%;
+  }
+
+  .sidebar{
+      width:30%;
+      height:100%;
+  }
+
+  .sidehref{
+    width: 100%;
+    min-height:30px;
+    margin-top:1%;
+  }
+
+  .hospitalimg{
+      width:70%;
+      height:98%;
+      padding:5px;
+      border:none;
+  }
+}

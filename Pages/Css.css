@@ -7,9 +7,21 @@
   text-align: center;
 }
 
-.division{
+.common{
   margin:auto;
   width:70%;
+  max-height:600px;
+}
+
+.common2{
+  margin:auto;
+  width:35%;
+  max-height:600px;
+}
+
+.common3{
+  margin:auto;
+  width:25%;
   max-height:600px;
 }
 
@@ -65,12 +77,6 @@
   background-color:#00AB9F;
   border:none;
   margin-left:20px;
-}
-
-.common{
-  margin:auto;
-  width:25%;
-  max-height:600px;
 }
 
 p{
@@ -147,16 +153,42 @@ ol , h2 , h3{
 
 .room{
   float:left;
-  width:31.4%;
-  height:23%;
-  padding:10px;
+  width:99.5%;
+  height:30%;
+  padding:1px;
   color:#D3282D;
-  font-size:20px;
+}
+
+.room2
+{
+  width:49%;
+  height:30%;
+}
+
+.room3{
+  width:33%;
+  height:23%;
 }
 
 .room img{
   width:100%;
   height:100%;
+}
+
+.room2 img{
+  width:100%;
+  height:100%;
+}
+
+.room3 img{
+  width:100%;
+  height:100%;
+}
+
+.display
+{
+  width:100%;
+  justify-content:center;
 }
 
 /*mobile*/
@@ -167,8 +199,16 @@ ol , h2 , h3{
     font-size:20px;
   }
 
-  .division{
+  .common{
     width:80%;
+  }
+
+  .common2{
+    width:75%;
+  }
+
+  .common3{
+    width:70%;
   }
 
   .maindiv{
@@ -210,10 +250,6 @@ ol , h2 , h3{
     font-size:15px;
   }
 
-  .common {
-    width:65%;
-  }
-
   .commontd{
     margin-top:20px;
   }
@@ -234,6 +270,22 @@ ol , h2 , h3{
     margin-top:0px;
   }
 
+  .room{
+    width:99.5%;
+    height:30%;
+  }
+
+  .room2
+  {
+    width:100%;
+    height:25%;
+  }
+
+  .room3{
+    width:49.4%;
+    height:23%;
+  }
+
 }
 
 /*tablet*/
@@ -244,8 +296,16 @@ ol , h2 , h3{
     font-size:25px;
   }
 
-  .division{
-    width:100%;
+  .common{
+    width:95%;
+  }
+
+  .common2{
+    width:75%;
+  }
+
+  .common3{
+    width:45%;
   }
 
   .maindiv{
@@ -288,10 +348,6 @@ ol , h2 , h3{
     font-size:18px;
   }
 
-  .common {
-    width:40%;
-  }
-
   .commontd{
     margin-top:25px;
   }
@@ -317,4 +373,122 @@ ol , h2 , h3{
     margin-top:0px;
   }
 
+  .room{
+    width:99.5%;
+    height:30%;
+  }
+
+  .room2
+  {
+    width:49.6%;
+    height:25%;
+  }
+
+  .room3{
+    width:33%;
+    height:23%;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px)
+{
+  .heading{
+    margin:20px 0px 20px 0px;
+    font-size:30px;
+  }
+
+  .common{
+    width:75%;
+  }
+
+  .common2{
+    width:60%;
+  }
+
+  .common3{
+    width:35%;
+  }
+
+  .maindiv{
+    padding:5px;
+  }
+
+  .formheading{
+    font-size:25px;
+    min-height:40px;
+  }
+
+  .regtr{
+    width:50%;
+  }
+
+  .regtd{
+    width:49%;
+    margin-top:5px;
+  }
+
+  .regtext{
+    width:90%;
+    padding:10px;
+  }
+
+  .buttontd{
+    width:100%;
+    margin-top:10px;
+  }
+
+  .button{
+    margin-left:0px;
+  }
+
+  p{
+    font-size:20px;
+  }
+
+  ol , h2 , h3{
+    font-size:20px;
+  }
+
+  .commontd{
+    margin-top:30px;
+  }
+
+  .commontext{
+    padding:10px;
+  }
+
+  .commonbutton{
+    width:75%;
+  }
+
+  .doctortable{
+    width:100%;
+    padding-bottom:30px;
+  }
+
+  .doctortr{
+    width:33%;
+  }
+
+  .doctortd{
+    margin-top:10px;
+  }
+
+  .room{
+    width:99.5%;
+    height:30%;
+  }
+
+  .room2
+  {
+    width:49.6%;
+    height:25%;
+  }
+
+  .room3{
+    width:33%;
+    height:23%;
+  }
+  
 }
