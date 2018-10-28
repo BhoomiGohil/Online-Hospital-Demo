@@ -1,19 +1,27 @@
+html{
+  box-sizing: border-box;
+}
+
+* , *::after , *::before{
+    box-sizing:inherit;
+}
+
 @font-face {
     font-family:myfont;
     src:url(../Font/raleway/Raleway-Light.ttf);
 }
 
 body{
-    margin:2px;
-    font-family:myfont;
+  margin:2px;
+  font-family:myfont;
 }
 
 .main{
    float:left;
    width:100%;
-   min-height:739px;
+   min-height:755px;
    border:1px #00AB9F solid;
-   padding-bottom:20px;
+   padding-bottom: 20px;
 }
 
 .header{
@@ -37,7 +45,7 @@ body{
 }
 
 .menu{
-    height:40px;
+    height:58px;
     margin:5px;
     padding:10px 0px 10px 0px;
     font-size:23px;
@@ -62,7 +70,7 @@ body{
 .content{
     float:left;
     width:100%;
-    height:77%;
+    height:77.6%;
     border-top:1px #00AB9F solid;
     display:flex;
 }
@@ -85,11 +93,11 @@ body{
 }
 
 .hospitalimg{
-    width:73%;
-    height: 98.2%;
-    float:right;
-    padding:5px;
-    border-left:1px solid #00AB9F;
+  width: 75%;
+  height: 100%;
+  float: right;
+  padding: 5px;
+  border-left: 1px solid #00AB9F;
 }
 
 .image{
@@ -143,7 +151,7 @@ body{
   }
 
   .menu{
-      height:25px;
+      height:26px;
       margin:0px;
       padding:0px;
       font-size:13px;
@@ -160,7 +168,7 @@ body{
 
   .sidebar{
       width:100%;
-      height:30%;
+      height:32%;
   }
 
   .sidehref{
@@ -172,7 +180,7 @@ body{
 
   .hospitalimg{
       width:100%;
-      height:60%;
+      height:68%;
       padding:0px;
       float:left;
       border:none;
@@ -199,7 +207,7 @@ body{
   }
 
   .menu{
-      height:35px;
+      height:44px;
       margin:2px;
       padding:5px 0px 5px 0px;
       font-size:20px;
@@ -210,13 +218,13 @@ body{
   }
 
   .content{
-      height:77%;
+      height:100%;
       display:block;
   }
 
   .sidebar{
       width:100%;
-      height:45%;
+      height:36%;
   }
 
   .sidehref{
@@ -227,7 +235,7 @@ body{
 
   .hospitalimg{
       width:100%;
-      height:65%;
+      height: 63.3%;
       padding:0px;
       float:left;
       border:none;
@@ -253,7 +261,7 @@ body{
   }
 
   .menu{
-    height: 45px;
+    height: 57px;
     margin: 4px;
     padding: 8px 0px 8px 0px;
     font-size: 25px;
@@ -264,7 +272,7 @@ body{
   }
 
   .content{
-      height:60%;
+      height:65%;
   }
 
   .sidebar{
@@ -280,7 +288,6 @@ body{
 
   .hospitalimg{
       width:70%;
-      height:98%;
       padding:5px;
       border:none;
   }
