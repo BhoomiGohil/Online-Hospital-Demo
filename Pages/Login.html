@@ -1,44 +1,46 @@
-<!DOCUMENT HTML>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <title>Login</title>
-  <link rel="stylesheet" type="text/css" href="Css.css">
-  <link rel="stylesheet" type="text/css" href="Main Page.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="Css.css" />
 </head>
 
 <body>
   <form>
-
     <div class="main">
-
       <header>
-       <a href="Main Page.html">
-         <img src="..\Images\logo.jpg">
-         <div>Sofiya Hospital...</div>
-       </a>
+        <a href="Main Page.html">
+          <img src="..\Images\logo.jpg" />
+          <div>Sofiya Hospital</div>
+        </a>
       </header>
 
-      <div class="heading">Login</div>
+      <div class="common-25">
+        <div class="heading">Login</div>
+        <div class="common-div">
+          <div class="registration-table registration-one-grid">
+            <div class="registration-row">
+              <div class="registration-column">
+                <input class="registration-input" type="text" name="txtusername" value="" size="30"
+                  placeholder="Username :" />
+              </div>
+              <div class="registration-column">
+                <input class="registration-input" type="password" name="pswlogin" value="" size="30"
+                  placeholder="PassWord :" />
+              </div>
+            </div>
 
-      <div class="common3">
-
-        <div class="maindiv">
-          <table class="commontable">
-            <tr class="commontr">
-              <td class="commontd"><input class="commontext" type=text name=txtusername value="" size=30 placeholder="Username :"></td>
-              <td class="commontd"><input class="commontext" type=password name=pswlogin value="" size=30 placeholder="PassWord :"></td>
-            </tr>
-
-            <tr class="commontr">
-              <td class="commontd"><input class="commonbutton commontext" type=submit name=btnsubmitlogin value="Login"></td>
-            </tr>
-          </table>
+            <div class="registration-row">
+              <div class="registration-column">
+                <input class="button registration-input" type="submit" name="btnsubmitlogin" value="Login" />
+              </div>
+            </div>
+          </div>
         </div>
-
       </div>
     </div>
-
   </form>
 </body>
 

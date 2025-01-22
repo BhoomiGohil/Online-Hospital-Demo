@@ -1,501 +1,489 @@
-.heading{
-  width:100%;
-  margin:30px 0px 30px 0px;
-  font-size:30px;
-  font-weight:bold;
-  color:#00AB9F;
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: myfont;
+  src: url(../Font/raleway/Raleway-Light.ttf);
+}
+
+:root {
+  --blue: #00AB9F;
+  --red: #D3282D;
+  --mintcream: mintcream;
+  --ligthgrey: #AAAAAA;
+}
+
+body {
+  margin: 0.25vh 0.25vw;
+  font-family: myfont;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+p {
+  font-size: 20px;
+  color: var(--red);
+}
+
+ol,
+h2,
+h3 {
+  font-size: 16px;
+  color: var(--blue);
+}
+
+h2 {
+  color: var(--red);
+}
+
+.main {
+  width: 100%;
+  height: 99.45vh;
+  border: 1px var(--blue) solid;
+  border-radius: 0px 0px 10px 10px;
+  overflow: scroll;
+}
+
+header {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 0px 25px;
+  border-bottom: 1px var(--blue) solid;
+}
+
+header a {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 10px;
+  color: var(--blue);
+  font-size: 17px;
+  text-decoration: none;
+}
+
+header img {
+  width: 30px;
+  height: 30px;
+}
+
+/* ----------------------------------------- Home page ----------------------------------------- */
+nav {
+  width: 99.3%;
+  height: 50px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  background-image: linear-gradient(to right, var(--blue), var(--red));
+}
+
+nav div {
+  width: 50%;
+  margin: auto;
+  display: flex;
+}
+
+nav div a {
+  color: var(--mintcream);
+  text-decoration: none;
+  width: 40%;
+  text-align: center;
+  margin: 5px;
+}
+
+article {
+  width: 100%;
+  height: 100%;
+  border-top: 1px var(--blue) solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+article>aside,
+article>section {
+  padding: 5px;
+}
+
+article aside {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+article aside a {
+  font-size: 16px;
+  text-decoration: none;
+  color: var(--blue);
   text-align: center;
 }
 
-.common{
-  margin:auto;
-  width:70%;
-  max-height:600px;
+section {
+  width: 75%;
+  height: 100%;
+  border-left: 1px solid var(--blue);
 }
 
-.common2{
-  margin:auto;
-  width:35%;
-  max-height:600px;
+section div {
+  width: 100%;
+  height: 100%;
+  background-image: url("../Images/Main.jpg");
+  background-size: 200% 200%;
+  animation: mainImage 50s infinite;
+  -webkit-animation: mainImage 50s infinite;
+  border-radius: 0px 0px 10px 0px;
 }
 
-.common3{
-  margin:auto;
-  width:25%;
-  max-height:600px;
-}
-
-.maindiv{
-  float:left;
-  border:1px #D3282D solid;
-  border-radius:5px;
-  padding:10px;
-}
-
-.formheading{
-  float:left;
-  width:100%;
-  font-size:25px;
-  color:#00AB9F;
-  margin-top:10px;
+/* ----------------------------------------- Common pages ----------------------------------------- */
+.heading {
+  width: 100%;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--blue);
   text-align: center;
 }
 
-.regtable{
-  width:100%;
-  padding-bottom:50px;
+.common-70 {
+  width: 70%;
 }
 
-.regtr{
-  float:left;
-  width:50%;
+.common-35 {
+  width: 35%;
 }
 
-.regtd{
-  float:left;
-  width:49.1%;
-  max-height:50px;
-  text-align:center;
-  margin-top:7px;
+.common-25 {
+  width: 25%;
 }
 
-.regtext{
-  width:80%;
-  border-radius:5px;
-  border:1px #D3282D solid;
-  box-shadow:5px 5px 10px #AAAAAA;
-  padding:10px;
+.common-70,
+.common-35,
+.common-25 {
+  margin: 25px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
 }
 
-.buttontd{
-  width:30%;
-  margin-top:125px;
+.common-div {
+  width: 100%;
+  border: 1px var(--red) solid;
+  border-radius: 5px;
+  padding: 20px;
 }
 
-.button{
-  color:mintcream;
-  background-color:#00AB9F;
-  border:none;
-  margin-left:20px;
+.common-blocks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 15px;
 }
 
-p{
-  font-size:20px;
-  color:#D3282D;
+.registration-heading {
+  width: 100%;
+  font-size: 25px;
+  color: var(--blue);
+  text-align: center;
 }
 
-ol , h2 , h3{
-  font-size:20px;
-  color:#00AB9F;
-  margin:5px 0px 5px 0px;
+.registration-table {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
-h2{
-  color:#d3282d;
+.registration-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
 }
 
-.commontable{
-  width:100%;
-  padding-bottom:50px;
+.registration-buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
-.commontr{
-  float:left;
-  width:100%;
+.registration-column {
+  width: 100%;
+  text-align: center;
 }
 
-.commontd{
-  float:left;
-  width:100%;
-  max-height:50px;
-  text-align:center;
-  margin-top:35px;
-}
-
-.commontext{
-  width:80%;
-  border-radius:5px;
-  border:1px #D3282D solid;
-  box-shadow:5px 5px 10px #AAAAAA;
-  padding:10px;
-}
-
-.commonbutton{
-  width:40%;
-  color:mintcream;
-  background-color:#00AB9F;
-  border:none;
-}
-
-.doctortable{
-  width:100%;
-  padding-bottom:50px;
-}
-
-.doctortr{
-  float:left;
-  width:33%;
-  min-height:50px;
-}
-
-.doctortd{
-  float:left;
-  width:100%;
-  min-height:20px;
-  text-align:center;
-  margin-top:35px;
-  color:#00AB9F;
-}
-
-.doctortd:nth-child(1){
+.registration-column>h4 {
+  color: var(--blue);
   text-decoration: underline;
 }
 
-.doctortd:nth-child(3){
-  text-decoration: underline;
+.registration-input {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px var(--red) solid;
+  box-shadow: 5px 5px 10px var(--lightgrey);
+  padding: 10px;
 }
 
-.room{
-  float:left;
-  width:99.5%;
-  height:30%;
-  padding:2px;
-  color:#D3282D;
+.registration-one-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr) !important;
 }
 
-.room2
-{
-  width:49%;
-  height:30%;
+.registration-two-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) !important;
 }
 
-.room3{
-  width:33%;
-  height:30%;
+.button {
+  color: var(--mintcream);
+  background-color: var(--blue);
+  border: none;
 }
 
-.room img{
-  width:100%;
-  height:100%;
-}
-
-.room2 img{
-  width:100%;
-  height:100%;
-}
-
-.room3 img{
-  width:100%;
-  height:100%;
-}
-
-.display
-{
-  width:100%;
-  margin-top: 5px;
-  justify-content:center;
+.display {
+  width: 100%;
+  justify-content: center;
   display: flex;
   flex-flow: row wrap;
+  gap: 10px;
 }
 
-/*mobile*/
-@media (min-width:320px) and (max-width:480px)
-{
-  .heading{
-    margin:15px 0px 15px 0px;
-    font-size:20px;
+.grid-two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.grid-three {
+  display: grid;
+  align-items: stretch;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.room {
+  width: 100%;
+  height: 200px;
+}
+
+.room img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  object-fit: cover;
+}
+
+@keyframes mainImage {
+  0% {
+    background-position: 0px 0px
   }
 
-  .common{
-    width:80%;
+  25% {
+    background-position: 100% 100%
   }
 
-  .common2{
-    width:75%;
+  50% {
+    background-position: 0px 100%
   }
 
-  .common3{
-    width:70%;
+  75% {
+    background-position: 100% 0px
   }
 
-  .maindiv{
-    padding:5px;
+  100% {
+    background-position: 0px 0px
   }
-
-  .formheading{
-    font-size:20px;
-  }
-
-  .regtr{
-    width:100%;
-  }
-
-  .regtd{
-    width:100%;
-    margin-top:5px;
-  }
-
-  .regtext{
-    width:80%;
-    padding:5px;
-  }
-
-  .buttontd{
-    width:100%;
-    margin-top:10px;
-  }
-
-  .button{
-    margin-left:0px;
-  }
-
-  p{
-    font-size:15px;
-  }
-
-  ol , h2 , h3{
-    font-size:15px;
-  }
-
-  .commontd{
-    margin-top:20px;
-  }
-
-  .commontext{
-    padding:5px;
-  }
-
-  .commonbutton{
-    width:80%;
-  }
-
-  .doctortr{
-    width:100%;
-  }
-
-  .doctortd{
-    margin-top:0px;
-  }
-
-  .room{
-    width:99.5%;
-    height:30%;
-  }
-
-  .room2
-  {
-    width:100%;
-    height:25%;
-  }
-
-  .room3{
-    width:49.4%;
-    height:23%;
-  }
-
 }
 
 /*tablet*/
-@media (min-width:481px) and (max-width:767px)
-{
-  .heading{
-    margin:20px 0px 20px 0px;
-    font-size:25px;
+@media (min-width:481px) and (max-width:767px) {
+  p {
+    font-size: 18px;
   }
 
-  .common{
-    width:95%;
+  ol,
+  h2,
+  h3 {
+    font-size: 18px;
   }
 
-  .common2{
-    width:75%;
+  nav {
+    height: 44px;
+    margin: 2px;
+    padding: 5px 0px 5px 0px;
   }
 
-  .common3{
-    width:45%;
+  nav div {
+    width: 90%;
   }
 
-  .maindiv{
-    padding:5px;
+  article>aside,
+  article>section {
+    padding: 2px;
   }
 
-  .formheading{
-    font-size:20px;
-    min-height:35px;
+  article aside {
+    width: 60%;
+    padding: 15px;
   }
 
-  .regtr{
-    width:50%;
+  article aside a {
+    width: 100%;
   }
 
-  .regtd{
-    width:100%;
-    margin-top:5px;
+  section {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
   }
 
-  .regtext{
-    width:80%;
-    padding:8px;
+  .heading {
+    font-size: 25px;
   }
 
-  .buttontd{
-    width:100%;
-    margin-top:10px;
+  .common-35 {
+    width: 75%;
   }
 
-  .button{
-    margin-left:0px;
+  .common-25 {
+    width: 45%;
   }
 
-  p{
-    font-size:18px;
+  .registration-heading {
+    font-size: 20px;
   }
 
-  ol , h2 , h3{
-    font-size:18px;
+  .registration-table {
+    grid-template-columns: repeat(1, 1fr);
   }
 
-  .commontd{
-    margin-top:25px;
+  .registration-buttons {
+    grid-column-start: 1;
+    grid-column-end: 2;
   }
 
-  .commontext{
-    padding:10px;
+  .button {
+    margin-left: 0px;
   }
-
-  .commonbutton{
-    width:50%;
-  }
-
-  .doctortable{
-    width:100%;
-    padding-bottom:50px;
-  }
-
-  .doctortr{
-    width:100%;
-  }
-
-  .doctortd{
-    margin-top:0px;
-  }
-
-  .room{
-    width:99.5%;
-    height:30%;
-  }
-
-  .room2
-  {
-    width:49.6%;
-    height:25%;
-  }
-
-  .room3{
-    width:33%;
-    height:23%;
-  }
-
 }
 
-@media (min-width: 768px) and (max-width: 1024px)
-{
-  .heading{
-    margin:20px 0px 20px 0px;
-    font-size:30px;
+/*mobile*/
+@media only screen and (max-width:480px) {
+  p {
+    font-size: 15px;
   }
 
-  .common{
-    width:75%;
+  ol,
+  h2,
+  h3 {
+    font-size: 15px;
   }
 
-  .common2{
-    width:60%;
+  .main {
+    height: auto
   }
 
-  .common3{
-    width:35%;
+  nav {
+    width: 100%;
+    height: 26px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 13px;
   }
 
-  .maindiv{
-    padding:5px;
+  nav div {
+    width: 90%;
   }
 
-  .formheading{
-    font-size:25px;
-    min-height:40px;
+  article {
+    flex-direction: column;
   }
 
-  .regtr{
-    width:50%;
+  article>aside,
+  article>section {
+    padding: 5px;
   }
 
-  .regtd{
-    width:49%;
-    margin-top:5px;
+  article aside {
+    width: 100%;
   }
 
-  .regtext{
-    width:90%;
-    padding:10px;
+  article aside a {
+    width: 100%;
   }
 
-  .buttontd{
-    width:100%;
-    margin-top:10px;
+  section {
+    width: 100%;
+    height: 300px;
+    padding: 0px;
+    margin: 0px;
+    border: none;
   }
 
-  .button{
-    margin-left:0px;
+  section div {
+    border-radius: 0px 0px 10px 10px;
   }
 
-  p{
-    font-size:20px;
+  .heading {
+    font-size: 20px;
   }
 
-  ol , h2 , h3{
-    font-size:20px;
+  .common-35 {
+    width: 75%;
   }
 
-  .commontd{
-    margin-top:30px;
+  .common-25 {
+    width: 70%;
   }
 
-  .commontext{
-    padding:10px;
+  .registration-heading {
+    font-size: 20px;
   }
 
-  .commonbutton{
-    width:75%;
+  .registration-table {
+    grid-template-columns: repeat(1, 1fr);
   }
 
-  .doctortable{
-    width:100%;
-    padding-bottom:30px;
+  .registration-buttons {
+    grid-column-start: 1;
+    grid-column-end: 2;
   }
 
-  .doctortr{
-    width:33%;
+  .button {
+    margin-left: 0px;
   }
-
-  .doctortd{
-    margin-top:10px;
-  }
-
-  .room{
-    width:99.5%;
-    height:30%;
-  }
-
-  .room2
-  {
-    width:49.6%;
-    height:25%;
-  }
-
-  .room3{
-    width:33%;
-    height:23%;
-  }
-
 }
